@@ -1,0 +1,131 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff4f4; 
+    color: #333;
+}
+
+div{
+    display: block;
+}
+
+#header {
+    position: fixed; /* Fix the header at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ff6b6b; /* Dark pink header background */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Ensure header is above other content */
+}
+
+#content {
+    padding-top: 20px; /* Adjust this value as needed */
+    position: relative;
+}
+
+
+#header-img {
+    max-width: 100px;
+    height: auto;
+}
+
+#nav-bar ul {
+    list-style: none;
+    display: flex;
+}
+
+#nav-bar li {
+    margin: 0 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#submit-email-section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #ffeded; /* Light pink background */
+}
+
+#form input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#submit {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container {
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.icon-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.deskripsi h2 {
+    color: #ff6b6b;
+}
+
+.product {
+    background-color: #ffeded;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.product h2 {
+    color: #ff6b6b;
+    margin-top: 10px;
+}
+
+.btn {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #ff6b6b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    #nav-bar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav-bar li {
+        margin: 5px 0;
+    }
+}

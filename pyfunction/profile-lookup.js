@@ -1,4 +1,4 @@
-// Setup
+
 const contacts = [
     {
       firstName: "Akira",
@@ -26,8 +26,7 @@ const contacts = [
     },
   ];
   
-  function lookUpProfile(name, prop) {
-    // Only change code below this line
+function lookUpProfile(name, prop) {
     for (let i = 0; i < contacts.length; i++) {
         if(contacts[i].firstName === name){
             if(contacts[i].hasOwnProperty(prop)){
@@ -38,6 +37,6 @@ const contacts = [
         } 
     }
     return "No such contact"
-    // Only change code above this line
   }
+
   lookUpProfile("Akira", "likes");

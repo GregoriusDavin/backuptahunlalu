@@ -30,15 +30,14 @@ const contacts = [
     // Only change code below this line
     for (let i = 0; i < contacts.length; i++) {
         if(contacts[i].firstName === name){
-            if(prop === contacts[i]){
+            if(contacts[i].hasOwnProperty(prop)){
                 return contacts[i][prop];
             } else {
-                return "No Such Property"
+                return "No such property"
             }
         } 
     }
-    return "No such Contact"
+    return "No such contact"
     // Only change code above this line
   }
-  
   lookUpProfile("Akira", "likes");

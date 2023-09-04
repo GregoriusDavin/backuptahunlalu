@@ -7,9 +7,9 @@ function convertToInteger(str) {
   console.log(convertToInteger("56"))
 
 function convertToBinary(str) {
-const a = parseInt(str, 2)
-return a;
+    const a = parseInt(str, 2)
+    return a;
 }
 
-convertToInteger("10011");
-console.log(convertToInteger("10011"))
+const convert = convertToBinary("10011");
+console.log(convert);

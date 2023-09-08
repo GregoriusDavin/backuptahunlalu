@@ -11,7 +11,7 @@ wire Sum, Cout;
   .Cout(Cout)
 );
 
-initial begin
+initial begin  //output
   $display("A B Cin | Sum Cout");
   $monitor("%b %b  %b  |  %b   %b", A, B, Cin, Sum, Cout);
   

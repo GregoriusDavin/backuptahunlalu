@@ -39,4 +39,4 @@ function lookUpProfile(name, prop) {
     return "No such contact"
   }
 
-  lookUpProfile("Radith", "likes");
+  lookUpProfile("Radith", "likes"); //bisa diganti dengan number atau yg lain

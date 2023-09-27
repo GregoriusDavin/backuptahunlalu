@@ -101,7 +101,7 @@ section '.code' code readable executable
         mov     ebx,10
         cmp     eax,BN_CLICKED shl 16 + IDM_ADD4
         je      .add_four
-        mov     ebx,10s
+        mov     ebx,10
         cmp     eax,BN_CLICKED shl 16 + IDM_SUB3
         je      .sub_three
         mov     ebx,10
@@ -333,9 +333,9 @@ section '.rsrc' resource data readable
                 menuitem 'Copy',IDM_COPY,0
                 menuitem 'Clear',IDM_CLEAR,0
                 menuseparator
-                menuitem 'Binary',IDM_BIN,0
-                menuitem 'Octal',IDM_OCT,0
-                menuitem 'Decimal',IDM_DEC,0
-                menuitem 'Hexadecimal',IDM_HEX,0
+                menuitem 'ADD 2',IDM_ADD2,0
+                menuitem 'SUBSTRACT 3', IDM_SUB3,0
+                menuitem 'ADD 4',IDM_ADD4,0
+                menuitem 'Hexadecimal',IDM_MUL2,0
                 menuseparator
                 menuitem 'Characters',IDM_CHAR,MFR_END

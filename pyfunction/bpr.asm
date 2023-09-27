@@ -65,13 +65,13 @@ section '.code' code readable executable
         jmp     .processed
       .wminitmenu:
         mov     ebx,[current_base]
-        cmp     ebx,2
+        cmp     ebx,10
         setz    al
         neg     al
         and     eax,MF_CHECKED
         or      eax,MF_BYCOMMAND
         invoke  CheckMenuItem,[hmenu],IDM_ADD4,eax
-        cmp     ebx,8
+        cmp     ebx,10
         setz    al
         neg     al
         and     eax,MF_CHECKED
@@ -83,7 +83,7 @@ section '.code' code readable executable
         and     eax,MF_CHECKED
         or      eax,MF_BYCOMMAND
         invoke  CheckMenuItem,[hmenu],IDM_ADD2,eax
-        cmp     ebx,16
+        cmp     ebx,10
         setz    al
         neg     al
         and     eax,MF_CHECKED
@@ -161,7 +161,7 @@ section '.code' code readable executable
         mov    ebx, [current_base]
         call   StrToInt
         pop    ebx
-        add    eax, 3
+        sub    eax, 3
         jmp    .show_result
       .add_two:
         invoke GetDlgItemText, [hdlg], IDC_NUM, buffer,100h
